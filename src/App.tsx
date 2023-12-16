@@ -1,9 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
+import Home from "./pages/home/Home";
+import Login from "./pages/login/Login";
 import Error from "./pages/Error";
-import Products from "./pages/Products";
-import Signup from "./pages/Signup";
+import Products from "./pages/products/Products";
+import Signup from "./pages/signup/Signup";
 import Ui from "./pages/Ui";
 import RootLayout from "./pages/Root";
 
