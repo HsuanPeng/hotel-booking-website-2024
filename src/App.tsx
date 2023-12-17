@@ -6,6 +6,7 @@ import Products from "./pages/products/Products";
 import Signup from "./pages/signup/Signup";
 import Ui from "./pages/Ui";
 import RootLayout from "./pages/Root";
+import ThemeProvider from "./theme/ThemeProvider";
 
 const router = createBrowserRouter([
   {
@@ -33,11 +34,12 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <RouterProvider router={router} />
-    </>
+    </ThemeProvider>
   );
 }
 
