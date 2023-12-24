@@ -14,8 +14,6 @@ const Header = () => {
       <Box
         sx={{
           width: "100%",
-          height: "1080px",
-          position: "absolute",
         }}
       >
         <Box
@@ -168,7 +166,7 @@ const Header = () => {
             justifyContent: "space-evenly",
             position: "absolute",
             zIndex: 1,
-            bottom: "32px",
+            top: "1044px",
             left: "50%",
             transform: "translateX(-50%)",
             "&>*:not(:last-child)": {
@@ -234,7 +232,6 @@ const Header = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             zIndex: -1,
-            position: "relative",
           }}
         />
       </Box>
