@@ -1,4 +1,4 @@
-import UiButton from "../components/UiButton";
+import UiButton from "../components/ui/UiButton";
 import { Typography } from "@mui/material";
 
 const Ui = () => {

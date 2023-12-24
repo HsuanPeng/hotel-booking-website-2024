@@ -18,7 +18,27 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"],
+      "api/*": ["src/api/*"],
+      "pages/*": ["src/pages/*"],
+      "plugins/*": ["src/plugins/*"],
+      "assets/*": ["src/assets/*"],
+      "modules/*": ["src/modules/*"],
+      "components/*": ["src/components/*"],
+      "utils/*": ["src/utils/*"],
+      "helpers/*": ["src/helpers/*"],
+      "services/*": ["src/services/*"],
+      "hooks/*": ["src/hooks/*"],
+      "axiosConfig": ["src/axios.config"],
+      "constants/*": ["src/constants/*"],
+      "routes/*": ["src/routes/*"],
+      "theme/*": ["src/theme/*"],
+      "machines/*": ["src/machines/*"],
+      "@type/*": ["src/@type/*"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

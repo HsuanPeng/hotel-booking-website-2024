@@ -8,6 +8,15 @@ const palette = {
     primaryTint: "#FAF7F5",
     contrastText: "#fff",
   },
+  secondary: {
+    120: "#140F0A",
+    main: "#000000",
+    80: "#4B4B4B",
+    60: "#909090",
+    40: "#ECECEC",
+    10: "#F9F9F9",
+    contrastText: "#fff",
+  },
   success: {
     120: "#299F65",
     main: "#52DD7E",

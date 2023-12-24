@@ -39,7 +39,6 @@ declare module "@mui/material/styles" {
     tiny: React.CSSProperties;
   }
 
-  // allow configuration using `createTheme`
   interface TypographyVariantsOptions {
     displayHeading?: React.CSSProperties;
     title?: React.CSSProperties;
@@ -55,9 +54,20 @@ declare module "@mui/material/Typography" {
   }
 }
 
+// 斷點
+
 const theme = createTheme({
   palette,
   typography,
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 375,
+      md: 768,
+      lg: 1024,
+      xl: 1536,
+    },
+  },
 });
 
 type Props = {
