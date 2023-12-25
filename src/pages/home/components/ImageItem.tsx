@@ -22,12 +22,7 @@ const ImageItem = ({ src, title, content }: TProps) => {
           width: "100%",
         }}
       >
-        <img
-          src={src}
-          style={{
-            width: "100%",
-          }}
-        />
+        <img src={src} />
       </Box>
       <Box
         sx={{

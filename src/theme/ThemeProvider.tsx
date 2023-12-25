@@ -68,6 +68,16 @@ const theme = createTheme({
       xl: 1536,
     },
   },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+        img {
+          width: 100%;
+          height: auto;
+        }
+      `,
+    },
+  },
 });
 
 type Props = {

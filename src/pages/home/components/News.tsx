@@ -38,12 +38,7 @@ const News = () => {
             zIndex: 1,
           }}
         >
-          <img
-            src={Dot}
-            style={{
-              width: "100%",
-            }}
-          />
+          <img src={Dot} />
         </Box>
         <Box
           sx={{
@@ -53,12 +48,7 @@ const News = () => {
             zIndex: 1,
           }}
         >
-          <img
-            src={Dot}
-            style={{
-              width: "100%",
-            }}
-          />
+          <img src={Dot} />
         </Box>
         <Box
           sx={{

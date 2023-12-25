@@ -23,7 +23,7 @@ const About = () => {
           height: "672px",
           position: "absolute",
           top: "200px",
-          right: "312px",
+          right: "16%",
         }}
       >
         <Box
