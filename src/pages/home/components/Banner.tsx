@@ -1,5 +1,4 @@
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
+import { Box, Typography } from "@mui/material";
 import LogoWhite from "assets/logo/logo_white.svg";
 import HeroSection from "assets/pic/home/hero_section.png";
 import UiHeroButton from "components/ui/UiHeroButton";
@@ -136,6 +135,7 @@ const Header = () => {
                 mt: "24px",
                 fontSize: "32px",
                 letterSpacing: "1.5px",
+                mb: "40px",
               }}
             >
               我們致力於為您提供無與倫比的奢華體驗與優質服務

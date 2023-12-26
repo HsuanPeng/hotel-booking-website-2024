@@ -1,5 +1,4 @@
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
+import { Box, Typography } from "@mui/material";
 import ImgOne from "assets/pic/home/img01.jpg";
 import ImgTwo from "assets/pic/home/img02.jpg";
 import ImgThree from "assets/pic/home/img03.jpg";

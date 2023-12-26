@@ -38,7 +38,8 @@
       "theme/*": ["src/theme/*"],
       "machines/*": ["src/machines/*"],
       "@type/*": ["src/@type/*"]
-    }
+    },
+    "types": ["vite-plugin-svgr/client"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

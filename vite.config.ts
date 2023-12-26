@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
+import svgr from "vite-plugin-svgr";
 import { resolve } from "path";
 
 // https://vitejs.dev/config/
@@ -9,7 +10,14 @@ export default defineConfig({
     process.env.NODE_ENV === "production"
       ? "/hotel-booking-website-2024/"
       : "/",
-  plugins: [react()],
+  plugins: [
+    react(),
+    svgr({
+      svgrOptions: {
+        // svgr options
+      },
+    }),
+  ],
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src"),

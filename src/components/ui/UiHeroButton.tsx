@@ -1,5 +1,4 @@
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
+import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 type TProps = {
@@ -12,7 +11,7 @@ const UiHeroButton = ({ children }: TProps) => {
   return (
     <Box
       sx={{
-        mt: "40px",
+        width: "100%",
         backgroundColor: theme.palette.secondary.contrastText,
         transition: "background-color 0.3s",
         color: theme.palette.secondary.main,
