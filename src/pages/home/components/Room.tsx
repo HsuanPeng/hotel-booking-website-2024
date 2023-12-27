@@ -3,6 +3,8 @@ import { useTheme } from "@mui/material/styles";
 import ImgFour from "assets/pic/home/img04.jpg";
 import { ReactComponent as ArrowLeft } from "assets/icons/ic_arrowLeft.svg";
 import { ReactComponent as ArrowRight } from "assets/icons/ic_arrowRight.svg";
+import BG from "assets/pic/home/bg.png";
+import Line from "assets/pic/home/Line.png";
 import UiHeroButton from "components/ui/UiHeroButton";
 
 const Room = () => {
@@ -21,6 +23,15 @@ const Room = () => {
     >
       <Box
         sx={{
+          position: "absolute",
+          top: "180px",
+          right: "0px",
+        }}
+      >
+        <img src={Line} />
+      </Box>
+      <Box
+        sx={{
           zIndex: 1,
         }}
       >
@@ -34,10 +45,13 @@ const Room = () => {
           justifyContent: "center",
           alignItems: "flex-start",
           gap: "40px",
-          flexShrink: 0,
         }}
       >
-        <Box>
+        <Box
+          sx={{
+            mt: "auto",
+          }}
+        >
           <Typography
             variant="h2"
             sx={{
@@ -76,6 +90,7 @@ const Room = () => {
             marginLeft: "auto",
             maxWidth: "112px",
             width: "100%",
+            zIndex: 1,
           }}
         >
           <Box
@@ -94,15 +109,16 @@ const Room = () => {
           </Box>
         </Box>
       </Box>
-      {/* <Box
+      <Box
         sx={{
-          height: "677px",
           position: "absolute",
           bottom: "0px",
+          zIndex: 0,
+          width: "100%",
         }}
       >
         <img src={BG} />
-      </Box> */}
+      </Box>
     </Box>
   );
 };
