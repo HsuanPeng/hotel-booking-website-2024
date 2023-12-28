@@ -30,6 +30,7 @@ const Food = () => {
           left: "-400px",
           top: "500px",
           transform: "rotate(90deg)",
+          zIndex: 1,
         }}
       >
         <img src={Line} />
@@ -39,6 +40,7 @@ const Food = () => {
           position: "absolute",
           left: "1640px",
           top: "-40px",
+          zIndex: 2,
         }}
       >
         <img src={Dot} />
@@ -84,6 +86,7 @@ const Food = () => {
           gap: "24px",
           width: "2176px",
           alignItems: "flex-start",
+          zIndex: 2,
         }}
       >
         <Box

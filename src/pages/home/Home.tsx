@@ -3,6 +3,7 @@ import News from "./components/News";
 import About from "./components/About";
 import Room from "./components/Room";
 import Food from "./components/Food";
+import Transportation from "./components/Transportation";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <About />
       <Room />
       <Food />
+      <Transportation />
     </>
   );
 };
