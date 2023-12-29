@@ -11,7 +11,7 @@ const About = () => {
     <Box
       sx={{
         position: "relative",
-        backgroundColor: "black",
+        backgroundColor: theme.palette.secondary[120],
         pt: "120px",
         pb: "200px",
       }}

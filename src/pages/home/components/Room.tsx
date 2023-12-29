@@ -17,7 +17,7 @@ const Room = () => {
         display: "flex",
         alignItems: "left",
         gap: "80px",
-        backgroundColor: "black",
+        backgroundColor: theme.palette.secondary[120],
         position: "relative",
       }}
     >

@@ -18,7 +18,7 @@ const Transportation = () => {
         justifyContent: "center",
         alignItems: "center",
         gap: "80px",
-        backgroundColor: "black",
+        backgroundColor: theme.palette.secondary[120],
       }}
     >
       <Box
