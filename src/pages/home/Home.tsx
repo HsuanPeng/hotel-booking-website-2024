@@ -1,4 +1,4 @@
-import Banner from "./components/Banner";
+import Banner from "./components/Banner/Banner";
 import News from "./components/News";
 import About from "./components/About";
 import Room from "./components/Room";
@@ -15,7 +15,7 @@ const Home = () => {
       <Room />
       <Food />
       <Transportation />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
