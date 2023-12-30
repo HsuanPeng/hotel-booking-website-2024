@@ -1,10 +1,9 @@
-import Banner from "./components/Banner/Banner";
-import News from "./components/News";
+import Banner from "./components/banner/Banner";
+import News from "./components/news/News";
 import About from "./components/About";
 import Room from "./components/Room";
 import Food from "./components/Food";
 import Transportation from "./components/Transportation";
-import Footer from "./components/Footer";
 
 const Home = () => {
   return (
@@ -15,7 +14,6 @@ const Home = () => {
       <Room />
       <Food />
       <Transportation />
-      {/* <Footer /> */}
     </>
   );
 };

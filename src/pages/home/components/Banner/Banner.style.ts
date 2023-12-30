@@ -173,7 +173,7 @@ export const BlurWhiteBackground = styled(Box)(({ theme }) => ({
     height: "420px",
     top: "321px",
     right: "20px",
-    width: "calc(100% - 64px)",
+    width: "calc(100% - 84px)",
   },
 }));
 

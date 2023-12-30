@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 import { styled } from "@mui/material/styles";
 
 type TProps = {
@@ -43,22 +42,19 @@ const ButtonText = styled(Typography)(({ theme }) => ({
   },
 }));
 
-const UiHeroButton = ({ children }: TProps) => {
-  const theme = useTheme();
+const ButtonLine = styled(Box)(({ theme }) => ({
+  maxWidth: "150px",
+  width: "100%",
+  height: "1px",
+  backgroundColor: theme.palette.secondary.main,
+}));
 
+const UiHeroButton = ({ children }: TProps) => {
   return (
     <ButtonContainer>
       <ButtonInnterContainer>
         <ButtonText variant="h5">{children}</ButtonText>
-        <Box
-          sx={{
-            maxWidth: "150px",
-            width: "100%",
-            height: "1px",
-            backgroundColor: theme.palette.secondary.main,
-          }}
-          className="line"
-        />
+        <ButtonLine className="line" />
       </ButtonInnterContainer>
     </ButtonContainer>
   );

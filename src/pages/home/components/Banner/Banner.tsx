@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import LogoWhite from "assets/logo/logo_white.svg";
 import UiHeroButton from "components/ui/UiHeroButton";
 import UiButton from "components/ui/UiButton";

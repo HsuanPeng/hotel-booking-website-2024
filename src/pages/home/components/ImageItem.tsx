@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 type TProps = {
   src: string;
@@ -6,43 +7,60 @@ type TProps = {
   content: string;
 };
 
+const ImageItemContainer = styled(Box)(({ theme }) => ({
+  display: "flex",
+  maxWidth: "1076px",
+  justifyContent: "space-between",
+  alignItems: "center",
+  [theme.breakpoints.down("lg")]: {
+    flexDirection: "column",
+  },
+}));
+
+const ImageContainer = styled(Box)(({ theme }) => ({
+  maxWidth: "474px",
+  [theme.breakpoints.down("lg")]: {},
+}));
+
+const ContentContainer = styled(Box)(({ theme }) => ({
+  marginLeft: "24px",
+  maxWidth: "578px",
+  width: "100%",
+  [theme.breakpoints.down("lg")]: {
+    marginLeft: "0",
+    marginTop: "24px",
+  },
+}));
+
+const ContentContainerTitle = styled(Typography)(({ theme }) => ({
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "28px",
+    lineHeight: "33.6px",
+    textAlign: "center",
+  },
+}));
+
+const ContentContainerContent = styled(Typography)(({ theme }) => ({
+  marginTop: "24px",
+  letterSpacing: "0.32px",
+  [theme.breakpoints.down("lg")]: {
+    marginTop: "8px",
+  },
+}));
+
 const ImageItem = ({ src, title, content }: TProps) => {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        maxWidth: "1076px",
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}
-    >
-      <Box
-        sx={{
-          maxWidth: "474px",
-          width: "100%",
-        }}
-      >
+    <ImageItemContainer>
+      <ImageContainer>
         <img src={src} />
-      </Box>
-      <Box
-        sx={{
-          ml: "24px",
-          maxWidth: "578px",
-          width: "100%",
-        }}
-      >
-        <Typography variant="h3">{title}</Typography>
-        <Typography
-          variant="body1"
-          sx={{
-            mt: "24px",
-            letterSpacing: "0.32px",
-          }}
-        >
+      </ImageContainer>
+      <ContentContainer>
+        <ContentContainerTitle variant="h3">{title}</ContentContainerTitle>
+        <ContentContainerContent variant="body1">
           {content}
-        </Typography>
-      </Box>
-    </Box>
+        </ContentContainerContent>
+      </ContentContainer>
+    </ImageItemContainer>
   );
 };
 
