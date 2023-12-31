@@ -24,6 +24,7 @@ export const LineBox = styled(Box)(({ theme }) => ({
   top: "500px",
   transform: "rotate(90deg)",
   zIndex: 1,
+  overflow: "visible !important",
   [theme.breakpoints.down("lg")]: {
     display: "none",
   },
@@ -81,8 +82,24 @@ export const ImageListContainer = styled(Box)({
   display: "flex",
   gap: "24px",
   width: "2176px",
-  alignItems: "flex-start",
   zIndex: 2,
+  animation: "slide 25s linear infinite",
+  "@keyframes slide": {
+    "0%": {
+      transform: "translateX(700px)",
+      opacity: 0,
+    },
+    "5%": {
+      opacity: 1,
+    },
+    "95%": {
+      opacity: 1,
+    },
+    "100%": {
+      transform: "translateX(-1000px)",
+      opacity: 0,
+    },
+  },
 });
 
 export const ImageBox = styled(Box)({

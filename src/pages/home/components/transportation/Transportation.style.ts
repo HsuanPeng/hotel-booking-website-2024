@@ -13,7 +13,7 @@ export const TransportationContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
-export const TopContainer = styled(Box)({
+export const TopContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -21,7 +21,10 @@ export const TopContainer = styled(Box)({
   gap: "80px",
   maxWidth: "1296px",
   width: "100%",
-});
+  [theme.breakpoints.down("lg")]: {
+    gap: "40px",
+  },
+}));
 
 export const TitleContainer = styled(Box)(({ theme }) => ({
   maxWidth: "304px",

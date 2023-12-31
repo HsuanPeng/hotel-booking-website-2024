@@ -7,15 +7,17 @@ export const HeaderContainer = styled(Box)(({ theme }) => ({
   alignItems: "center",
   paddingLeft: "80px",
   paddingRight: "80px",
+  paddingTop: "24px",
+  paddingBottom: "24px",
   position: "absolute",
   zIndex: 1,
   width: "100%",
-  marginTop: "24px",
+  // backgroundColor: "black",
   [theme.breakpoints.down("lg")]: {
     paddingLeft: "12px",
     paddingRight: "12px",
-    marginTop: "16px",
-    marginBottom: "16px",
+    paddingTop: "16px",
+    paddingBottom: "16px",
   },
 }));
 
@@ -45,5 +47,6 @@ export const HeaderRightMobile = styled(Box)(({ theme }) => ({
   display: "none",
   [theme.breakpoints.down("lg")]: {
     display: "block",
+    cursor: "pointer",
   },
 }));

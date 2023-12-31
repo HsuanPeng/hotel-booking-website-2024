@@ -32,6 +32,8 @@ const Header = () => {
             variant="contained"
             sx={{
               fontWeight: "700",
+              height: "56px",
+              width: "129px",
             }}
           >
             立即訂房
