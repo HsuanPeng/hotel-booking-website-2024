@@ -84,7 +84,7 @@ export const CenterRight = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("lg")]: {
     marginLeft: "0px",
     paddingLeft: "26px",
-    paddingRight: "40px",
+    paddingRight: "30px",
     marginTop: "100px",
   },
 }));

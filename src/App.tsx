@@ -3,7 +3,8 @@ import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Error from "./pages/Error";
 import Products from "./pages/products/Products";
-import Signup from "./pages/signup/Signup";
+import SignUp from "./pages/signUp/SignUp";
+import SignIn from "./pages/signIn/SignIn";
 import Ui from "./pages/Ui";
 import RootLayout from "./pages/Root";
 import ThemeProvider from "./theme/ThemeProvider";
@@ -24,8 +25,12 @@ const router = createBrowserRouter([
         element: <Products />,
       },
       {
-        path: "signup",
-        element: <Signup />,
+        path: "signUp",
+        element: <SignUp />,
+      },
+      {
+        path: "signIn",
+        element: <SignIn />,
       },
       {
         path: "ui",

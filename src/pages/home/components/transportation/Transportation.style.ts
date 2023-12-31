@@ -39,16 +39,15 @@ export const TitleContainer = styled(Box)(({ theme }) => ({
 }));
 
 export const TitleBox = styled(Typography)({
-  maxWidth: "98px",
+  maxWidth: "105px",
   lineHeight: "57.6px",
-  letterSpacing: "5%",
 });
 
 export const Title = styled(Typography)(({ theme }) => ({
   color: theme.palette.primary.main,
   [theme.breakpoints.down("lg")]: {
     fontSize: "32px",
-    maxWidth: "66px",
+    maxWidth: "70px",
     lineHeight: "38.4px",
   },
 }));

@@ -71,9 +71,10 @@ export const AboutTitleContainer = styled(Box)(({ theme }) => ({
 }));
 
 export const AboutTitleBox = styled(Box)(({ theme }) => ({
-  maxWidth: "98px",
+  maxWidth: "105px",
+  width: "100%",
   [theme.breakpoints.down("lg")]: {
-    maxWidth: "66px",
+    maxWidth: "70px",
   },
 }));
 

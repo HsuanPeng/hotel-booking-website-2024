@@ -4,6 +4,7 @@ import About from "./components/about/About";
 import Room from "./components/room/Room";
 import Food from "./components/food/Food";
 import Transportation from "./components/transportation/Transportation";
+import Footer from "components/footer/Footer";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Room />
       <Food />
       <Transportation />
+      <Footer />
     </>
   );
 };
