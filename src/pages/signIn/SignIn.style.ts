@@ -69,9 +69,12 @@ export const SignInTitle = styled(Typography)(({ theme }) => ({
   color: theme.palette.primary.main,
 }));
 
-export const SignInSubtitle = styled(Typography)({
+export const SignInSubtitle = styled(Typography)(({ theme }) => ({
   color: "white",
-});
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "32px",
+  },
+}));
 
 export const InputContainer = styled(Box)({
   width: "100%",
@@ -87,10 +90,13 @@ export const InputBox = styled(Box)({
   display: "flex",
 });
 
-export const InputLabel = styled(Typography)({
+export const InputLabelBox = styled(Typography)(({ theme }) => ({
   color: "white",
   fontSize: "16px",
-});
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "14px",
+  },
+}));
 
 export const Input = styled(TextField)({
   backgroundColor: "white",
@@ -103,7 +109,7 @@ export const PasswordBox = styled(Box)({
   alignItems: "center",
 });
 
-export const PasswordLeft = styled(Box)({
+export const CheckBox = styled(Box)({
   display: "flex",
   alignItems: "center",
 });
@@ -111,6 +117,9 @@ export const PasswordLeft = styled(Box)({
 export const PasswordForgot = styled(Box)(({ theme }) => ({
   color: theme.palette.primary.main,
   cursor: "pointer",
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "14px",
+  },
 }));
 
 export const LoginButton = styled(Button)(({ theme }) => ({
@@ -133,13 +142,56 @@ export const GoRegister = styled(Box)({
   justifyContent: "flex-start",
   alignItems: "center",
   gap: "8px",
+  marginTop: "8px",
 });
 
-export const NotCustomer = styled(Typography)({
+export const NotCustomer = styled(Typography)(({ theme }) => ({
   color: "white",
-});
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "14px",
+  },
+}));
 
 export const GoRegisterText = styled(Typography)(({ theme }) => ({
   color: theme.palette.primary.main,
   cursor: "pointer",
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "14px",
+  },
+}));
+
+export const SignUpStepContainer = styled(Box)({
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  marginTop: "16px",
+  marginBottom: "16px",
+});
+
+export const StepNumberContainer = styled(Box)({
+  color: "white",
+  gap: "8px",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+});
+
+export const StepNumber = styled(Typography)(({ theme }) => ({
+  width: "32px",
+  height: "32px",
+  backgroundColor: theme.palette.primary.main,
+  borderRadius: "50%",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+}));
+
+export const StepLine = styled(Box)(({ theme }) => ({
+  width: "100%",
+  height: "2px",
+  maxWidth: "188px",
+  backgroundColor: theme.palette.secondary[60],
+  [theme.breakpoints.down("lg")]: {
+    maxWidth: "133px",
+  },
 }));
