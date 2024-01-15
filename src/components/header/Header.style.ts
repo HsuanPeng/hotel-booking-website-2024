@@ -12,7 +12,6 @@ export const HeaderContainer = styled(Box)(({ theme }) => ({
   position: "absolute",
   zIndex: 1,
   width: "100%",
-  // backgroundColor: "black",
   [theme.breakpoints.down("lg")]: {
     paddingLeft: "12px",
     paddingRight: "12px",
