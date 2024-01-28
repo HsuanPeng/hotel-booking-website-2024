@@ -2,6 +2,7 @@ import { Box, Checkbox, InputLabel, Select } from "@mui/material";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import { useTheme } from "@mui/material/styles";
+import { useNavigate } from "react-router-dom";
 import {
   SignInContainer,
   SignInBG,
@@ -34,6 +35,7 @@ import { useLocation } from "react-router-dom";
 import { useState } from "react";
 
 const SignIn = () => {
+  const navigate = useNavigate();
   const location = useLocation();
   const isSignIn = location.pathname.includes("signin");
   const theme = useTheme();
@@ -94,7 +96,9 @@ const SignIn = () => {
             <InputBox>
               <GoRegister>
                 <NotCustomer variant="body1">沒有會員嗎？</NotCustomer>
-                <GoRegisterText>前往註冊</GoRegisterText>
+                <GoRegisterText onClick={() => navigate("/signup")}>
+                  前往註冊
+                </GoRegisterText>
               </GoRegister>
             </InputBox>
           </SignInForm>
